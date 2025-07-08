@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Fahmi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<div id="paint-effect"></div>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <logo-component></logo-component>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/certificates">Certificates</a></li>
+        <li><a href="#/projects">Projects</a></li>
+        <li><a href="#/education">Education</a></li>
+        <li><a href="#/skills">Skills</a></li>
+        <li><a href="#/socials">Socials</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="app"></div>
+  <div id="wave-effect"></div>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
